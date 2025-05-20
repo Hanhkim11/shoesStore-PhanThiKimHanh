@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Adidas Prophere",
       "alias": "adidas-prophere",
-      "price": 350,
+      "price": 350 ,
       "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
       "shortDescription": "The midsole contains 20% more Boost for an amplified Boost feeling.\r\n\r\n",
       "quantity": 995,
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "name": "Adidas Prophere Black White",
+      "name": "Adidas Proph Black-white",
       "alias": "adidas-prophere-black-white",
       "price": 450,
       "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "name": "Adidas Prophere Customize",
+      "name": "Adidas Proph Customize",
       "alias": "adidas-prophere-customize",
       "price": 375,
       "description": "The adidas Primeknit upper wraps the foot with a supportive fit that enhances movement.\r\n\r\n",
@@ -84,7 +84,7 @@
       "name": "Nike Adapt BB",
       "alias": "nike-adapt-bb",
       "price": 630,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+      "description": "Nike shoe is the rare high-percentage coach's dream on D. Designed unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive.\r\n\r\n",
       "shortDescription": "Paul George is the rare high-percentage shooter",
       "quantity": 599,
       "image": "http://svcy3.myclass.vn/images/nike-adapt-bb.png"
@@ -94,7 +94,7 @@
       "name": "Nike Air Max 97",
       "alias": "nike-air-max-97",
       "price": 650,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+      "description": "Nike shoe is the rare high-percentage coach's dream on D. Designed unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive.\r\n\r\n",
       "shortDescription": "Paul George is the rare high-percentage shooter",
       "quantity": 984,
       "image": "http://svcy3.myclass.vn/images/nike-air-max-97.png"
@@ -104,7 +104,7 @@
       "name": "Nike Air Max 97 Blue",
       "alias": "nike-air-max-97-blue",
       "price": 450,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+      "description":"Nike shoe is the rare high-percentage coach's dream on D. Designed unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive.\r\n\r\n",
       "shortDescription": "Paul George is the rare high-percentage shooter",
       "quantity": 875,
       "image": "http://svcy3.myclass.vn/images/nike-air-max-97-blue.png"
@@ -114,7 +114,7 @@
       "name": "Nike Air Max 270 React",
       "alias": "nike-air-max-270-react",
       "price": 750,
-      "description": "Nike shoe is the rare high-percentage shooter who's also a coach's dream on D. Designed for his unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive, ideal for players like PG who go hard every play.\r\n\r\n",
+      "description": "Nike shoe is the rare high-percentage coach's dream on D. Designed unrivaled 2-way game, the PG 4 unveils a new cushioning system that's lightweight, articulated and responsive.\r\n\r\n",
       "shortDescription": "Paul George is the rare high-percentage shooter",
       "quantity": 445,
       "image": "http://svcy3.myclass.vn/images/nike-air-max-270-react.png"
