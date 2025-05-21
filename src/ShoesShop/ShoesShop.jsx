@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "./Card";
 import DetailModal from "./DetailModal";
+import CartShop from "./CartShop";
 
 const ShoesShop = () => {
   const [selectedShoe, setSelectedShoe] = useState(null);
@@ -155,11 +156,58 @@ const ShoesShop = () => {
     setSelectedShoe(null);
   };
 
+  const [cart, setCart] = useState([]);
+
+  const themSPVaoGioHang = (product) => {
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((item) => item.id === product.id);
+      if (existingItem) {
+        return prevCart.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
+  };
+
+  const deletProduct = (id) => {
+    const cartDelete = [
+      ...cart.filter((item) => {
+        return item.id !== id;
+      }),
+    ];
+    setCart(cartDelete);
+  };
+
+  const updateQuantity = (id, quantity) => {
+    const sp = cart.find((item) => item.id === id);
+    if (sp) {
+      sp.quantity += quantity;
+      if (sp.quantity === 0) {
+        if (window.confirm("Bạn có muốn xóa sản phẩm này không?")) {
+          deletProduct(id);
+        } else {
+          sp.quantity = 1;
+        }
+        return;
+      }
+    }
+    let newCart = [...cart];
+    setCart(newCart);
+  };
+
   const renderCard = () => {
     return data.map((item) => {
       return (
         <div className="col-4" key={item.id}>
-          <Card detail={item} onViewDetail={handleViewDetail} />
+          <Card
+            detail={item}
+            onViewDetail={handleViewDetail}
+            themSPVaoGioHang={themSPVaoGioHang}
+          />
         </div>
       );
     });
@@ -167,11 +215,17 @@ const ShoesShop = () => {
 
   return (
     <div>
-      <h1 className="text-primary text-center mb-5">Shoes Shop</h1>
+      <h1 className="my-5 text-primary text-center">Shoes Shop</h1>
       <div className="row">{renderCard()}</div>
       {selectedShoe && (
         <DetailModal content={selectedShoe} onClose={handleCloseModal} />
       )}
+      <h1 className="text-center my-5 text-danger">Giỏ Hàng</h1>
+      <CartShop
+        cart={cart}
+        delProduct={deletProduct}
+        updateQuantity={updateQuantity}
+      />
     </div>
   );
 };
