@@ -1,5 +1,4 @@
 import React from "react";
-
 const CartShop = ({ cart, delProduct, updateQuantity }) => {
   const renderCartItems = () =>
     cart.map((item) => (
