@@ -215,12 +215,11 @@ const ShoesShop = () => {
 
   return (
     <div>
-      <h1 className="my-5 text-primary text-center">Shoes Shop</h1>
+      <h1 className="pb-4 text-primary text-center">Shoes Shop</h1>
       <div className="row">{renderCard()}</div>
       {selectedShoe && (
         <DetailModal content={selectedShoe} onClose={handleCloseModal} />
       )}
-      <h1 className="text-center my-5 text-danger">Giỏ Hàng</h1>
       <CartShop
         cart={cart}
         delProduct={deletProduct}

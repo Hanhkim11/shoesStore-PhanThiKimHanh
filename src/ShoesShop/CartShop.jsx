@@ -44,9 +44,35 @@ const CartShop = ({ cart, delProduct, updateQuantity }) => {
         </td>
       </tr>
     ));
+  const totalMoney = () => {
+    if (cart.length === 0) {
+      return 0;
+    } else {
+      const totalCart = cart.reduce((total, item, index) => {
+        total += item.price * item.quantity;
+        return total;
+      }, 0);
+      return totalCart.toLocaleString();
+    }
+  };
+
+  const countProduct = () => {
+    let total = 0;
+    for (let item of cart) {
+      total += item.quantity;
+    }
+    return total;
+  };
+  // C2:
+  // const totalProduct = cart.reduce((total,item,index)=>(total +=item.quantity),0) return totalProduct
 
   return (
     <div>
+      <h1 className="text-center my-5 text-danger">
+        Giỏ Hàng
+        <span className="text-danger mx-3">({countProduct()})</span>
+      </h1>
+
       <table className="table table-striped text-start">
         <thead>
           <tr className="fs-3">
@@ -60,6 +86,9 @@ const CartShop = ({ cart, delProduct, updateQuantity }) => {
         </thead>
         <tbody>{renderCartItems()}</tbody>
       </table>
+      <div className="text-end text-danger fs-1 my-2">
+        Tổng tiền: ${totalMoney()}
+      </div>
     </div>
   );
 };
